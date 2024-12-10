@@ -3,8 +3,7 @@ import functions
 
 
 todos  = functions.get_todos()
-
-
+# This is testing
 def add_todo():
     todo = st.session_state['txt_newtodo'] + "\n"
     todos.append(todo)
