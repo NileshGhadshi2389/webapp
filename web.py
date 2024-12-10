@@ -17,6 +17,9 @@ st.write("this app will give sample of theme")
 
 st.write("Your To-Do list:")
 
+# text Input
+st.text_input(label="Enter your to-do item:",placeholder="Add new todo...",
+              on_change=add_todo, key="txt_newtodo")
 
 
 """ for todo in todos:
@@ -30,8 +33,5 @@ for index, todo in enumerate(todos):
         del st.session_state[todo]
         st.rerun()
 
-# text Input
-st.text_input(label="Enter your to-do item:",placeholder="Add new todo...",
-              on_change=add_todo, key="txt_newtodo")
 
 
