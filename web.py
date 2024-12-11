@@ -9,13 +9,16 @@ def add_todo():
     todos.append(todo)
     functions.write_todos(todos)
 
-
 st.title("My To-Do App")
 st.header("To-Do Application")
-st.subheader("This is my to-do application")
-st.write("this app will give sample of theme")
 
-st.write("Your To-Do list:")
+with st.expander("About App"):
+    st.subheader("This is my to-do application")
+    st.write("this app will give sample of theme")
+    st.write("No need to change code, This is change all code for ek tar tu tari mi tari.")
+
+
+st.write("<b>Your To-Do list:</b>", unsafe_allow_html=True)
 
 # text Input
 st.text_input(label="Enter your to-do item:",placeholder="Add new todo...",
